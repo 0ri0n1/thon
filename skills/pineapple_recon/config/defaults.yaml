@@ -1,0 +1,13 @@
+# pineapple_recon default configuration
+#
+# Override per-run via CLI flags, env vars, or --config <path>.
+# NEVER commit secrets to this file. Use PINEAPPLE_PASSWORD env var for auth.
+
+host: 172.16.42.1          # default USB-tether management IP
+user: root
+# password:                   # DO NOT commit. Set PINEAPPLE_PASSWORD env var.
+# key_path: ~/.ssh/pineapple # preferred long-term: key auth
+
+iface: wlan1               # base managed iface; script derives monitor iface
+band: both                 # '2' | '5' | 'both'
+duration: 300              # seconds

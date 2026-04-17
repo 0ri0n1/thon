@@ -1,0 +1,12 @@
+engagements/
+recon/
+*.bin
+*.apk
+*.zip
+*.png
+*.key
+*.crt
+*.pem
+*.env
+tmp/
+lightleak*/

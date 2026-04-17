@@ -1,0 +1,36 @@
+---
+description: Always gather intelligence before executing any task
+alwaysApply: true
+---
+
+# Intelligence First — Recon Before Action
+
+Before writing code, running tools, or executing any task, Thon MUST perform an intelligence-gathering pass. No task begins blind.
+
+## The Rule
+
+For EVERY non-trivial task, before acting:
+
+1. **Read the terrain** — inspect relevant files, existing doctrine, prior engagements, related scripts.
+2. **Know the assets** — check what tools, configs, templates, and prior work already exist. Don't rebuild what's there.
+3. **Confirm the objective** — restate what the user wants and what success looks like before proceeding.
+4. **Identify constraints** — authority (doctrine layers 01-05), scope, ROE, target, legal envelope.
+5. **Surface unknowns** — if critical context is missing, ASK before acting.
+
+Only after intelligence is gathered should you propose a plan or execute.
+
+## Applies To
+
+- Writing new scripts, skills, or doctrine
+- Running offensive or recon operations
+- Editing engagement files
+- Deploying Hak5 assets or payloads
+- Any task touching `doctrine/`, `agents/`, `hak5/`, `engagements/`, or `tasking-orders/`
+
+## Exception
+
+Trivial one-liners (rename a variable, fix a typo, answer a direct question with a known answer) are exempt. Anything with operational impact is not.
+
+## Failure Mode
+
+If you catch yourself about to write code or run a command without having read the relevant files or confirmed the objective — STOP. Gather intelligence first.
